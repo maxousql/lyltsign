@@ -1,0 +1,237 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+html {
+    --themeColor: #0037ff;
+    --loginCard: white;
+    --borderLoginCard: #ddd;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pageBodyStyle {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.pageBodyStyle::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: var(--themeColor);
+    height: 100vh;
+    width: 60%;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+    z-index: -1;
+}
+
+.login-card {
+    background-color: var(--loginCard);
+    border: 1px solid var(--borderLoginCard);
+    box-shadow: 0 10px 50px -30px black;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.login-card a {
+    text-decoration: none;
+    color: var(--themeColor);
+}
+
+.login-card .column {
+    padding: 4rem;
+}
+
+.login-card .column:last-child {
+    background: url('https://as2.ftcdn.net/v2/jpg/03/15/28/29/1000_F_315282931_3FWD5XwemMBAlzaKDJ1IHvzBE1HfmBxg.jpg') center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    z-index: 1;
+}
+
+.login-card .column:last-child::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, white, #ffffff82);
+    inset: 0;
+    z-index: -1;
+}
+
+.login-card .column:last-child a {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: 2px solid var(--themeColor);
+    color: var(--themeColor);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 600;
+}
+
+.login-card .column:last-child a:hover {
+    background: var(--themeColor);
+    color: white;
+}
+
+.login-card .column:last-child a:active {
+    scale: .95;
+    background-color: darken(var(--themeColor), 10%);
+    color: var(--themeColor);
+}
+
+.login-card .column:last-child p {
+    text-align: center;
+}
+
+.login-card .column form {
+    margin-top: 3rem;
+}
+
+.login-card .column .form-element {
+    width: 100%;
+    border: none;
+    background-color: #f1f1f1;
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: box-shadow .2s;
+    margin-bottom: 1rem;
+}
+
+.login-card .column .form-element:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--themeColor);
+}
+
+.login-card .column .h1 {
+    margin-bottom: 15px;
+}
+
+.login-card .column form button {
+    background-color: var(--themeColor);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all .2s;
+    border: 2px solid var(--themeColor);
+}
+
+.login-card .column form button:hover {
+    background-color: white;
+    color: var(--themeColor);
+    border: 2px solid var(--themeColor);
+}
+
+.login-card .column form button:active {
+    scale: .95;
+    background-color: var(--themeColor);
+    color: white;
+}
+
+.login-card .column .form-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin-left: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+    transition: scale .2s;
+}
+
+.social-buttons a:hover {
+    scale: .95;
+}
+
+.social-buttons a.facebook {
+    background-color: #3b5998;
+}
+
+.social-buttons a.twitter {
+    background-color: #55acee;
+}
+
+.social-buttons a.github {
+    background-color: #111;
+}
+
+input[type=checkbox] {
+    accent-color: var(--themeColor);
+    width: 16px;
+    height: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width:1082px) {
+    .login-card {
+        display: block;
+        width: 500px;
+        text-align: center;
+    }
+
+    .login-card .column:last-child {
+        display: none;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-buttons {
+        justify-content: center;
+    }
+}
+
+/* @media (min-width:1082px) {
+    .login-card .column .social-buttons {
+        display: none;
+    }
+
+    .login-card .column .othersMethods {
+        display: none;
+    }
+} */
