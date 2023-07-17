@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SignatureCanvas from 'react-signature-canvas';
+import Navbar from '../components/navBar';
 
 function SignaturePad() {
     const [sign, setSign] = useState()
@@ -15,6 +16,9 @@ function SignaturePad() {
 
     return (
         <div>
+            <div>
+                <Navbar />
+            </div>
             <div style={{ border: "2px solid black", width: 500, height: 200 }}>
                 <SignatureCanvas
                     canvasProps={{ width: 500, height: 200, className: 'sigCanvas' }}

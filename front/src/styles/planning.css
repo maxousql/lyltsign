@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+.fc .fc-col-header-cell-cushion {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0037ff;
+    text-decoration: none;
+}
+
+.fc-direction-ltr {
+    direction: ltr;
+    text-align: left;
+    padding: 50px;
+    margin: 50px;
+}

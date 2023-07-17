@@ -3,7 +3,12 @@ import logo from '../img/test.png';
 import userIcon from '../img/user.png';
 import '../styles/navBar.css';
 
+import { useNavigate } from 'react-router-dom';
+import { accountService } from '../services/accountService';
+
 const Navigation = () => {
+  let navigate = useNavigate();
+
   const hamburgerTogglerRef = useRef(null);
   const navLinksContainerRef = useRef(null);
 
@@ -46,6 +51,11 @@ const Navigation = () => {
     };
   }, []);
 
+  const logout = () => {
+    accountService.logout()
+    navigate("/login")
+  }
+
   return (
     <nav>
       <a href="/" className="nav-icon" aria-label="visit homepage" aria-current="page">
@@ -73,7 +83,7 @@ const Navigation = () => {
           <img src={userIcon} alt="user-icon" />
         </a>
         <div className="sign-btns">
-          <button type="button">Déconnexion</button>
+          <button type="button" onClick={logout}>Déconnexion</button>
         </div>
       </div>
     </nav>
