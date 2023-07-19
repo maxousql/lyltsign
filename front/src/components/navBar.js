@@ -72,10 +72,12 @@ const Navigation = () => {
         </button>
         <div className="navlinks-container" ref={navLinksContainerRef}>
           <a href="/"><Link to="/home">Accueil</Link></a>
-          <a href="/"><Link to="/absence">Absences</Link></a>
           <a href="/"><Link to="/planning">Planning</Link></a>
-          <a href="/"><Link to="/profil">Profil</Link></a>
+          <a href="/"><Link to="/absence">Absences</Link></a>
           <a href="/"><Link to="/qrcode">QRCODE</Link></a>
+          <a href="/"><Link to="/sign">Signature</Link></a>
+          <a href="/"><Link to="/doc">Documentation</Link></a>
+          <a href="/"><Link to="/profil">Profil</Link></a>
         </div>
       </div>
 

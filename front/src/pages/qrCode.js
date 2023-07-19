@@ -6,8 +6,8 @@ import Scanner from '../components/scanner';
 
 const qrCode = () => {
     const userData = {
-        userId: 'ABC123',
-        eventName: 'Meeting XYZ',
+        coursID: 'ABC123',
+        name: 'Développement WEB et API',
     };
 
     const dataString = JSON.stringify(userData);
@@ -17,12 +17,12 @@ const qrCode = () => {
             <div>
                 <Navbar />
             </div>
-            <div>
-                <Scanner />
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', marginTop: '20px'}}>
+                <h2 style={{marginBottom: '20px'}}>QR Code d'émargement</h2>
+                <QRCode value={dataString} />
             </div>
             <div>
-                <h2>Code QR d'émargement</h2>
-                <QRCode value={dataString} />
+                <Scanner />
             </div>
         </div>
     );

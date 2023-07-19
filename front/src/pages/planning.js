@@ -26,7 +26,21 @@ export default function Planning() {
                     businessHours={true}
                     events={[
                         { title: 'Développement web et API', start: '2023-07-18T09:45:00', end: '2023-07-18T11:15:00' },
-                        { title: 'Unity', start: '2023-07-18T11:30:00', end: '2023-07-18T13:00:00' }
+                        { title: 'Développement web et API', start: '2023-07-18T11:30:00', end: '2023-07-18T13:00:00' },
+                        { title: 'Unity', start: '2023-07-18T14:00:00', end: '2023-07-18T15:30:00' },
+                        { title: 'Unity', start: '2023-07-18T15:45:00', end: '2023-07-18T17:15:00' },
+                        { title: 'Développement web et API', start: '2023-07-19T09:45:00', end: '2023-07-18T11:15:00' },
+                        { title: 'Développement web et API', start: '2023-07-19T11:30:00', end: '2023-07-18T13:00:00' },
+                        { title: 'Unity', start: '2023-07-19T14:00:00', end: '2023-07-19T15:30:00' },
+                        { title: 'Unity', start: '2023-07-19T15:45:00', end: '2023-07-19T17:15:00' },
+                        { title: 'Développement web et API', start: '2023-07-20T09:45:00', end: '2023-07-20T11:15:00' },
+                        { title: 'Développement web et API', start: '2023-07-20T11:30:00', end: '2023-07-20T13:00:00' },
+                        { title: 'Unity', start: '2023-07-20T14:00:00', end: '2023-07-20T15:30:00' },
+                        { title: 'Unity', start: '2023-07-20T15:45:00', end: '2023-07-20T17:15:00' },
+                        { title: 'Développement web et API', start: '2023-07-21T09:45:00', end: '2023-07-21T11:15:00' },
+                        { title: 'Développement web et API', start: '2023-07-21T11:30:00', end: '2023-07-21T13:00:00' },
+                        { title: 'Unity', start: '2023-07-21T14:00:00', end: '2023-07-21T15:30:00' },
+                        { title: 'Unity', start: '2023-07-21T15:45:00', end: '2023-07-21T17:15:00' },
                     ]}
                 />
             </div></>

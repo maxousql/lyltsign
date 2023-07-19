@@ -23,14 +23,44 @@ function App() {
             <Home />
           </AuthGuard>
         } />
-        <Route path="/planning" element={<Planning />} />
-        <Route path="/sign" element={<Sign />} />
-        <Route path="/qrcode" element={<QrCode />} />
-        <Route path="/adduser" element={<AddUser />} />
-        <Route path="/absence" element={<PageAbsence />} />
-        <Route path="/profil" element={<ProfilePage />} />
-        <Route path="/documentation" element={<DocumentationPage/>}/>
-        <Route path="" element={<Home />} />
+        <Route path="/planning" element={
+          <AuthGuard>
+            <Planning />
+          </AuthGuard>
+        } />
+        <Route path="/sign" element={
+          <AuthGuard>
+            <Sign />
+          </AuthGuard>
+        } />
+        <Route path="/qrcode" element={
+          <AuthGuard>
+            <QrCode />
+          </AuthGuard>
+        } />
+        <Route path="/adduser" element={
+          <AuthGuard>
+            <AddUser />
+          </AuthGuard>
+        } />
+        <Route path="/absence" element={
+          <AuthGuard>
+            <PageAbsence />
+          </AuthGuard>
+        } />
+        <Route path="/profil" element={
+          <AuthGuard>
+            <ProfilePage />
+          </AuthGuard>
+        } />
+        <Route path="/doc" element={
+          <AuthGuard>
+            <DocumentationPage />
+          </AuthGuard>
+        } />
+
+        <Route path="*" element={<Login />} />
+
       </Routes>
     </BrowserRouter>
   );

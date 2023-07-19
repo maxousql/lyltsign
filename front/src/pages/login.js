@@ -17,8 +17,8 @@ const Login = () => {
     }, []);
 
     const [data, setData] = useState({
-        mail: 'maxime',
-        password: 'maxime'
+        mail: '',
+        password: ''
     })
 
     const onChange = (e) => {
@@ -42,16 +42,16 @@ const Login = () => {
         <div class="login-card">
             <div class="column">
                 <h1>Connexion</h1>
-                <p>Après vous être connecté, vous pouvez profiter de l'application !</p>
+                <p>Après votre connexion, vous pourrez profiter pleinement de l'application !</p>
                 <form onSubmit={onSubmit}>
                     <div class="form-item">
-                        <input type="text" name="mail" class="form-element" placeholder="Utilisateurs ou email" value={data.mail} onChange={onChange} />
+                        <input type="text" name="mail" class="form-element" placeholder="Utilisateurs ou email" required value={data.mail} onChange={onChange} />
                     </div>
                     <div class="form-item">
-                        <input type="password" name="password" class="form-element" placeholder="Mot de passe" value={data.password} onChange={onChange} />
+                        <input type="password" name="password" class="form-element" placeholder="Mot de passe" required value={data.password} onChange={onChange} />
                     </div>
                     <div class="form-checkbox-item">
-                        <input type="checkbox" id="rememberMe" checked />
+                        <input type="checkbox" id="rememberMe"/>
                         <label for="rememberMe">Se souvenir de moi</label>
                     </div>
                     <div class="flex">
@@ -61,7 +61,7 @@ const Login = () => {
             </div>
             <div class="column">
                 <h2>Bienvenue sur LyltSign</h2>
-                <p>Facilement connecté, un émargement sans tilt !</p>
+                <p>Facilement connecté, un émargement qui fait tilt !</p>
             </div>
         </div>
     );

@@ -5,9 +5,9 @@ function QRScanner() {
     const [data, setData] = useState('No result');
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '100vh' }}>
-            <h2>Scanner de code QR</h2>
-            <div style={{ width: '70%', maxWidth: '300px' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', marginTop: "50px" }}>
+            <h2>Scanner de QR Code</h2>
+            <div style={{ width: '70%', maxWidth: '400px' }}>
                 <QrReader
                     onResult={(result, error) => {
                         if (!!result) {

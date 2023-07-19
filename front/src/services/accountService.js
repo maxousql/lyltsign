@@ -1,5 +1,7 @@
 let saveToken = (token) => {
-    localStorage.setItem('token', token)
+    if (token !== undefined) {
+        localStorage.setItem('token', token)
+    }
 }
 
 let logout = () => {
