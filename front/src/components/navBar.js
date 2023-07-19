@@ -74,7 +74,7 @@ const Navigation = () => {
           <a href="/"><Link to="/home">Accueil</Link></a>
           <a href="/"><Link to="/absence">Absences</Link></a>
           <a href="/"><Link to="/planning">Planning</Link></a>
-          <a href="/"><Link to="/home">Profil</Link></a>
+          <a href="/"><Link to="/profil">Profil</Link></a>
           <a href="/"><Link to="/qrcode">QRCODE</Link></a>
         </div>
       </div>

@@ -8,8 +8,9 @@ import Sign from "./pages/sign";
 import QrCode from "./pages/qrCode";
 import AddUser from "./pages/addUser";
 import PageAbsence from "./pages/pageAbsence";
-
+import ProfilePage from "./pages/ProfilePage";
 import AuthGuard from "./components/authGuard";
+import DocumentationPage from "./pages/DocumentationPage";
 
 function App() {
 
@@ -27,8 +28,9 @@ function App() {
         <Route path="/qrcode" element={<QrCode />} />
         <Route path="/adduser" element={<AddUser />} />
         <Route path="/absence" element={<PageAbsence />} />
-
-        <Route path="*" element={<Home />} />
+        <Route path="/profil" element={<ProfilePage />} />
+        <Route path="/documentation" element={<DocumentationPage/>}/>
+        <Route path="" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

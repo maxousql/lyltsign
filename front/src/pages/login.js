@@ -30,7 +30,6 @@ const Login = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log(data);
         reqApiService.login(data)
             .then(res => {
                 accountService.saveToken(res.data.token)
