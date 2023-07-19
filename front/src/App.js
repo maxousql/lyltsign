@@ -6,6 +6,8 @@ import Login from "./pages/login";
 import Planning from "./pages/planning";
 import Sign from "./pages/sign";
 import QrCode from "./pages/qrCode";
+import AddUser from "./pages/addUser";
+import PageAbsence from "./pages/pageAbsence";
 
 import AuthGuard from "./components/authGuard";
 
@@ -23,6 +25,8 @@ function App() {
         <Route path="/planning" element={<Planning />} />
         <Route path="/sign" element={<Sign />} />
         <Route path="/qrcode" element={<QrCode />} />
+        <Route path="/adduser" element={<AddUser />} />
+        <Route path="/absence" element={<PageAbsence />} />
 
         <Route path="*" element={<Home />} />
       </Routes>

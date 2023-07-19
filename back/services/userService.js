@@ -42,5 +42,17 @@ module.exports = {
                 return callBack(null, results[0]);
             }
         )
+    },
+
+    getAllUsers: () => {
+        pool.query(
+            `SELECT * FROM users`,
+            (error, results, fields) => {
+                if (error) {
+                    callBack(error);
+                }
+                return callBack(null, results[0]);
+            }
+        )
     }
 }

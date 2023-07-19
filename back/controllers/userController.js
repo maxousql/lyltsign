@@ -1,4 +1,4 @@
-const { create, getUserByUserId, getUserByMail } = require("../services/userService");
+const { create, getUserByUserId, getUserByMail, getAllUsers } = require("../services/userService");
 const { hashSync, genSaltSync, compareSync } = require("bcrypt");
 
 
@@ -40,6 +40,26 @@ module.exports = {
                 });
             }
             results.password = undefined;
+            return res.json({
+                success: 1,
+                data: results
+            });
+        });
+    },
+
+    getAllUsers: (req, res) => {
+        const {body} = req;
+        getAllUsers(err, results => {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            if (!results) {
+                return res.json({
+                    success: 0,
+                    message: "Record not Found"
+                })
+            }
             return res.json({
                 success: 1,
                 data: results

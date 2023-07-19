@@ -8,7 +8,7 @@
 
 nav {
   font-family: Montserrat, Helvetica, sans-serif;
-  position: fixed;
+  position: relative;
   top: 0px;
   width: 100%;
   display: flex;
