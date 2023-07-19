@@ -3,7 +3,7 @@ import logo from '../img/test.png';
 import userIcon from '../img/user.png';
 import '../styles/navBar.css';
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { accountService } from '../services/accountService';
 
 const Navigation = () => {
@@ -71,10 +71,11 @@ const Navigation = () => {
           <span></span>
         </button>
         <div className="navlinks-container" ref={navLinksContainerRef}>
-          <a href="/" aria-current="page">Accueil</a>
-          <a href="/">Absences</a>
-          <a href="/">Planning</a>
-          <a href="/">Profil</a>
+          <a href="/"><Link to="/home">Accueil</Link></a>
+          <a href="/"><Link to="/home">Absences</Link></a>
+          <a href="/"><Link to="/planning">Planning</Link></a>
+          <a href="/"><Link to="/home">Profil</Link></a>
+          <a href="/"><Link to="/qrcode">QRCODE</Link></a>
         </div>
       </div>
 

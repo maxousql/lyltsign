@@ -3,8 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/home";
 import Login from "./pages/login";
-import Test from "./pages/planning";
-import Test2 from "./pages/test2";
+import Planning from "./pages/planning";
 import Sign from "./pages/sign";
 import QrCode from "./pages/qrCode";
 
@@ -21,8 +20,7 @@ function App() {
             <Home />
           </AuthGuard>
         } />
-        <Route path="/planning" element={<Test />} />
-        <Route path="/test2" element={<Test2 />} />
+        <Route path="/planning" element={<Planning />} />
         <Route path="/sign" element={<Sign />} />
         <Route path="/qrcode" element={<QrCode />} />
 
