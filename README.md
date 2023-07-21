@@ -1,4 +1,12 @@
-# Cahier des charges
+<h1 align="center">
+  <br>
+  LYLT SIGN
+  <br>
+  CORPORATION
+  <br>
+  <br>
+  Cahier des charges
+</h1>
 
 ## Présentation de notre entreprise
 
@@ -8,26 +16,24 @@ Nom du projet : LyltSign
 
 Email : lylt@outlook.fr
 
-<aside>
 📍 Adresse : 53 Cours Albert thomas
 
-</aside>
-
-Hiérarchie : 
+#### Hiérarchie : 
 
 - Admin système et réseaux : **Allan VIEIRA**
 - Consultant Technique et chef de projet : **Maxime LAI YIO LAI TONG**
 - Consultant technique : **Ilias BAGHAGHA**
 - Consutante technique : **Manelle HASSEN**
 
-Personne à contacter dans l’entreprise : 
+📞 Personne à contacter dans l’entreprise : 
 
-<aside>
-📞 **LAI YIO LAI TONG Maxime** : 07.83.78.57.14                                                                                    **BAGHAGHA Ilias** : 07.71.17.94.50
+
+**LAI YIO LAI TONG Maxime** : 07.83.78.57.14
+**BAGHAGHA Ilias** : 07.71.17.94.50
 **VIEIRA Allan** : 07.82.88.11.89
 **HASSEN Manelle** : 07.69.35.79.25
 
-</aside>
+
 
 ## Présentation de l’entreprise
 
