@@ -1,6 +1,8 @@
 const { verify } = require("jsonwebtoken");
 
 module.exports = {
+    /* La fonction `checkToken` est une fonction middleware utilisée pour vérifier l'authenticité d'un
+    jeton dans une requête. */
     checkToken: (req, res, next) => {
         let token = req.get("authorization");
         console.log(token);

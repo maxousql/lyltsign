@@ -1,3 +1,4 @@
+/* Crée un pool de connexions à une base de données MySQL à l'aide du package "mysql". */
 const { createPool } = require("mysql");
 
 const pool = createPool({
