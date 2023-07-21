@@ -1,3 +1,4 @@
+/* Le code importe divers modules et composants à partir de différents fichiers et bibliothèques. */
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -6,6 +7,12 @@ import { reqApiService } from '../services/reqApiService';
 
 import "../styles/login.css";
 
+/**
+ * La fonction Login est un composant React qui rend un formulaire de connexion et gère la soumission
+ * du formulaire.
+ * @returns Le composant Login renvoie un élément JSX, qui représente la structure et le contenu de la
+ * carte de connexion.
+ */
 const Login = () => {
     let navigate = useNavigate();
     useEffect(() => {
@@ -67,4 +74,8 @@ const Login = () => {
     );
 };
 
+/* La ligne `export default Login;` exporte le composant `Login` comme exportation par défaut du
+module. Cela signifie que lorsqu'un autre fichier importe ce module, il peut importer directement le
+composant `Login` sans avoir à spécifier son nom. Par exemple, dans un autre fichier, vous pouvez
+importer le composant `Login` comme ceci : `import Login from './Login';`. */
 export default Login;

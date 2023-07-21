@@ -1,3 +1,8 @@
+/**
+  * Le code ci-dessus est un composant React qui rend un pavé de signature où les utilisateurs peuvent dessiner leur
+  * signature et enregistrez-la en tant qu'image.
+  * @returns Le composant SignaturePad renvoie un élément JSX.
+  */
 import React, { useState } from "react";
 import SignatureCanvas from 'react-signature-canvas';
 import Navbar from '../components/navBar';

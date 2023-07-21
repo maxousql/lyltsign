@@ -1,3 +1,4 @@
+/* Le code importe divers modules et composants nécessaires au composant Planning. */
 import React from "react";
 
 import FullCalendar from '@fullcalendar/react';
@@ -8,6 +9,12 @@ import '../styles/planning.css'
 
 import Navbar from '../components/navBar';
 
+/**
+ * La fonction renvoie un composant qui affiche un calendrier avec des événements pour une semaine.
+ * @returns un élément JSX qui contient un composant Navbar et un composant FullCalendar. Le composant
+ * FullCalendar est configuré avec divers accessoires tels que plugins, initialView, locales, weekends,
+ * slotDuration, startTime, endTime, businessHours et events.
+ */
 export default function Planning() {
     return (
         <>

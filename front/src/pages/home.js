@@ -1,8 +1,14 @@
+/* Ces lignes de code importent les dépendances et composants nécessaires pour le composant HomePage. */
 import React from 'react';
 import Navbar from '../components/navBar';
 import { Link } from 'react-router-dom';
 import '../styles/HomePage.css';
 
+/**
+ * La fonction HomePage renvoie un élément représentant la page d'accueil d'un site Web appelé
+ * LYLTSIGN, qui est une plateforme conçue pour simplifier la gestion des absences et des retards des
+ * étudiants.
+ */
 const HomePage = () => {
   return (
     <div>

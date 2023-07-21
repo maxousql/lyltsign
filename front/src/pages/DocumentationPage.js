@@ -1,6 +1,19 @@
+/* Le code importe les dépendances et composants nécessaires pour le composant DocumentationPage. */
 import React from "react";
 import "../styles/DocumentationPage.css"; 
 import Navbar from '../components/navBar';
+
+/**
+ * Le composant DocumentationPage est un composant fonctionnel React qui affiche une page de
+ * documentation pour le site de participation en ligne LYLTSIGN, fournissant des instructions sur la
+ * façon de naviguer et d'utiliser ses fonctionnalités.
+ * @returns Le composant DocumentationPage renvoie un élément JSX qui représente la page de
+ * documentation du site de participation en ligne LYLTSIGN. La page comprend une barre de navigation,
+ * un en-tête et un bloc de documentation qui fournit des instructions pour l'utilisation des
+ * fonctionnalités du site, telles que l'accès à la page d'accueil, la connexion, la consultation de
+ * l'horaire, la signature des présences, la justification des absences et la déconnexion.
+ */
+
 const DocumentationPage = () => {
   return (
     <div>

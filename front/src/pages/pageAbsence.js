@@ -1,3 +1,4 @@
+/* Le code importe les dépendances et composants nécessaires pour le composant `PageAbsence`. */
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/navBar';
 import '../styles/PageAbsences.css';
